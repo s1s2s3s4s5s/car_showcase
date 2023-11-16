@@ -7,6 +7,8 @@ export async function fetchCars() {
   const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars', { headers: headers })
 
   const result = await response.json()
+
+  return result
 }
 
 export const calculateCarRent = (city_mpg: number, year:number) => {
