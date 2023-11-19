@@ -10,8 +10,14 @@ export interface CustomButtonProps {
     isDisabled?: boolean
 }
 
+export interface OptionsProps {
+    title: string
+    value: string
+}
+
 export interface CustomFilterProps {
     title: string
+    options: OptionsProps[]
 }
 
 export interface SearchManufacturerProps {
@@ -32,4 +38,12 @@ export interface CarProps {
     model: string
     transmission: string
     year: number
+}
+
+export interface FilterProps{
+    manufacturer: string
+    year: number
+    fuel: string
+    limit: number
+    model: string
 }
